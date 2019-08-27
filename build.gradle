@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+}
+
+
+
+group 'Autumn'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+// 配置从哪里找包
+repositories {
+    // 先查 build.gradle 文件所在目录下的 libs 目录。
+    flatDir {
+        dirs 'libs'
+    }
+    // 若目录中没有，则去阿里云的 maven 仓库找。
+    maven {
+        url "http://maven.aliyun.com/nexus/content/groups/public/"
+    }
+    maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+
+    // 再没有，则去 maven 的官方仓库。
+    mavenCentral()
+}//end
+
+
+// fix bug："编码 GBK 的不可映射字符"
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}// end fix
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.12.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.12.1'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml
+//    compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: '2.9.9'
+
+}
+
+
+//jar {        //生成jar包，
+//    // 把用到的所有的jar都打到生成的jar中。以便java -jar 执行，居家旅行必备，当然只是提供一个jar给别人用就可以注释该行了
+//    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+//    manifest { //配置 Manifest文档属性
+//        attributes 'Main-Class': 'log.Hello' //指定程序入口
+//    }
+//}

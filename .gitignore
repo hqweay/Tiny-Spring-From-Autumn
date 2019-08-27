@@ -1,0 +1,17 @@
+### 过滤文件夹 ###
+.gradle
+/build/
+
+/gradle/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+
+
+### 草稿 ###
+/draft.md

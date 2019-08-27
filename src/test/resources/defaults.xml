@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+<!--  定义的顺序没有要求！已经被处理过了。  -->
+
+    <bean name="Huang" class="cn.hqweay.MyTest.Dog">
+        <property name="name" value="大黄"></property>
+    </bean>
+
+    <bean name="MiMi" class="cn.hqweay.MyTest.Cat">
+        <property name="name" value="咪咪"></property>
+        <property name="dog" ref="Huang"></property>
+    </bean>
+
+</beans>
