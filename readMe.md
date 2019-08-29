@@ -9,8 +9,10 @@
 - [x] 最基本的依赖注入（DefaultListableBeanFactory）
 
     参考测试类 cn.hqweay.beans.factory.xml.XmlBeanDefinitionReaderTests.java
-- [ ] 施工中...
+- [x] ApplicationContext 可以获取 Bean 了
 
+    cn.hqweay.context.support.ClassPathXmlApplicationContextTest.java
+- [ ] 施工中...
 # 参考
 
 [https://github.com/esmusssein777/spring-framework](<https://github.com/esmusssein777/spring-framework>)

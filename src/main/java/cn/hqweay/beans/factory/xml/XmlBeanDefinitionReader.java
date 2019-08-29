@@ -22,6 +22,8 @@ import java.io.InputStream;
  *  Created by hqweay on 2019/8/15 18:43
  */
 public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
+
+  // 实际使用时，BeanFactory 也实现了 Registry 接口。
   public XmlBeanDefinitionReader(BeanDefinitionRegistry registry) {
     super(registry);
   }
