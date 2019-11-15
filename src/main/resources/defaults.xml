@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
 
-<!--  定义的顺序没有要求！已经被处理过了。  -->
+<!--  定义的顺序没有要求！
+      因为是先注册 Bean 到 Registry
+      实例化时去 Registry 取，Registry 里就已经 xml 这里定义的东西了
+ -->
+
 
     <bean name="Huang" class="cn.hqweay.MyTest.Dog">
         <property name="name" value="大黄"></property>

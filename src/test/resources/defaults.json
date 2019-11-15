@@ -1,0 +1,28 @@
+{
+  "beans": {
+    "bean": [
+      {
+        "name": "Huang",
+        "class": "cn.hqweay.MyTest.Dog",
+        "property": [{
+          "name": "name",
+          "value": "大黄"
+        }]
+      },
+      {
+        "name": "MiMi",
+        "class": "cn.hqweay.MyTest.Cat",
+        "property": [
+          {
+            "name": "name",
+            "value": "咪咪"
+          },
+          {
+            "name": "dog",
+            "ref": "Huang"
+          }
+        ]
+      }
+    ]
+  }
+}

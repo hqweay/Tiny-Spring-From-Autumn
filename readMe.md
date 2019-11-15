@@ -9,10 +9,19 @@
 - [x] 最基本的依赖注入（DefaultListableBeanFactory）
 
     参考测试类 cn.hqweay.beans.factory.xml.XmlBeanDefinitionReaderTests.java
+
 - [x] ApplicationContext 可以获取 Bean 了
 
     cn.hqweay.context.support.ClassPathXmlApplicationContextTest.java
+
+- [x] 自定义 JsonBeanDefinitionReader
+
+    Yeah！Bean 配置可以用 json 了哦。（引用了 fastjson 进行 json 解析。
+
+    参考测试类 cn.hqweay.beans.factory.json.JsonBeanDefinitionReaderTests.java
+
 - [ ] 施工中...
+
 # 参考
 
 [https://github.com/esmusssein777/spring-framework](<https://github.com/esmusssein777/spring-framework>)
