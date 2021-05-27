@@ -3,11 +3,11 @@
 
 <!--  定义的顺序没有要求！已经被处理过了。  -->
 
-    <bean name="Huang" class="cn.hqweay.MyTest.Dog">
+    <bean name="Huang" class="net.leay.MyTest.Dog">
         <property name="name" value="大黄"></property>
     </bean>
 
-    <bean name="MiMi" class="cn.hqweay.MyTest.Cat">
+    <bean name="MiMi" class="net.leay.MyTest.Cat">
         <property name="name" value="咪咪"></property>
         <property name="dog" ref="Huang"></property>
     </bean>

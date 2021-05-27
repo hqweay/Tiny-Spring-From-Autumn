@@ -8,11 +8,11 @@
 # 完成
 - [x] 最基本的依赖注入（DefaultListableBeanFactory）
 
-    参考测试类 cn.hqweay.beans.factory.xml.XmlBeanDefinitionReaderTests.java
+    参考测试类 XmlBeanDefinitionReaderTests.java
 
 - [x] ApplicationContext 可以获取 Bean 了
 
-    cn.hqweay.context.support.ClassPathXmlApplicationContextTest.java
+    ClassPathXmlApplicationContextTest.java
 
 - [x] 自定义 JsonBeanDefinitionReader
 

@@ -7,11 +7,11 @@
  -->
 
 
-    <bean name="Huang" class="cn.hqweay.MyTest.Dog">
+    <bean name="Huang" class="Dog">
         <property name="name" value="大黄"></property>
     </bean>
 
-    <bean name="MiMi" class="cn.hqweay.MyTest.Cat">
+    <bean name="MiMi" class="Cat">
         <property name="name" value="咪咪"></property>
         <property name="dog" ref="Huang"></property>
     </bean>
