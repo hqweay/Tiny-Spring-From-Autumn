@@ -20,6 +20,8 @@
 
     参考测试类 cn.hqweay.beans.factory.json.JsonBeanDefinitionReaderTests.java
 
+- [ ] AOP……
+
 - [ ] 施工中...
 
 # 参考
